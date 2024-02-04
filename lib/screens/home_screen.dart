@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
           Icons.menu,
         ),
         title: const Text(
-          "FirstApp",
+          "FirstApp",  
         ),
         actions: [
           IconButton(
