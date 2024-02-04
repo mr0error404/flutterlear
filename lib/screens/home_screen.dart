@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         leading: const Icon(
           Icons.menu,
         ),
-        title: const Text(
+        title: const Text( 
           "FirstApp",  
         ),
         actions: [
