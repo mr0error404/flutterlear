@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -43,64 +45,378 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         elevation: 1,
       ),
-      body: Container(
-        color: Colors.grey,
-        width: double.infinity,
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.cyan,
-              child: const Text(
-                "First Text",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  backgroundColor: Colors.black,
+      // body: SingleChildScrollView(
+      //   // scrollDirection: Axis.horizontal,
+      //   scrollDirection: Axis.vertical,
+      //   child: Container(
+      //     width: double.infinity,
+      //     child: Column(
+      //       // mainAxisSize: MainAxisSize.max,
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //       // crossAxisAlignment: CrossAxisAlignment.start,
+      //       children: [
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "First Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.white,
+      //             // backgroundColor: Colors.black,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Second Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.brown,
+      //             // backgroundColor: Colors.green,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Thred Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.red,
+      //             // backgroundColor: Colors.grey,
+      //           ),
+      //         ),
+      //         const Text(
+      //           "Four Text",
+      //           style: TextStyle(
+      //             fontSize: 30,
+      //             // fontWeight: FontWeight.bold,
+      //             // color: Colors.blue,
+      //             // backgroundColor: Colors.yellowAccent,
+      //           ),
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
+      body: Column(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+                border: Border.all(),
+                // borderRadius: BorderRadius.only(topRight: Radius.circular(30)),
+                borderRadius: BorderRadius.circular(10)),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            child: Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                const Image(
+                  image: NetworkImage(
+                      "https://e0.pxfuel.com/wallpapers/861/967/desktop-wallpaper-portrait-girl-ultra-beautiful-woman.jpg"),
+                  // width: 410,
+                  // height: 150,
+                  // fit: BoxFit.cover,
                 ),
-              ),
+                Container(
+                  // alignment: Alignment.center,
+                  color: Colors.black.withOpacity(0.45),
+                  width: double.infinity,
+                  // padding: EdgeInsets.all(5),
+                  // padding: EdgeInsetsDirectional.only(
+                  //   top: 5,
+                  //   bottom: 5,
+                  // ),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 5,
+                  ),
+                  child: const Text(
+                    "Hello",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
             ),
-            // Container(
-            //   color: Colors.red,
-            //   child: const Text(
-            //     "Second Text",
-            //     style: TextStyle(
-            //       fontSize: 30,
-            //       fontWeight: FontWeight.bold,
-            //       color: Colors.brown,
-            //       backgroundColor: Colors.green,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   color: Colors.black,
-            //   child: const Text(
-            //     "Thred Text",
-            //     style: TextStyle(
-            //       fontSize: 30,
-            //       fontWeight: FontWeight.bold,
-            //       color: Colors.red,
-            //       backgroundColor: Colors.grey,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   color: Colors.purpleAccent,
-            //   child: const Text(
-            //     "Four Text",
-            //     style: TextStyle(
-            //       fontSize: 30,
-            //       fontWeight: FontWeight.bold,
-            //       color: Colors.blue,
-            //       backgroundColor: Colors.yellowAccent,
-            //     ),
-            //   ),
-            // ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
