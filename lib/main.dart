@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfirstproject/screens/bmi_screen.dart';
+import 'package:flutterfirstproject/screens/count_screen.dart';
 import 'package:flutterfirstproject/screens/home_screen.dart';
 import 'package:flutterfirstproject/screens/user_screen.dart';
 
@@ -11,9 +13,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  UserScreen(), 
+      // home:  UserScreen(),
+      // home: CountScreen(),
+      home: BMIScreen(),
     );
   }
 }
